@@ -16,6 +16,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     max: 1
@@ -28,8 +29,8 @@ Keep `site/content/github-info.md` current with practical, useful GitHub guidanc
 ## Instructions
 
 1. Read `notes/mona-notes.md` and the current `site/content/github-info.md` before making changes.
-2. Use web-fetch to read both https://github.blog/latest/ and https://github.blog/changelog/.
+2. Use web-fetch to read https://github.blog/latest/, https://github.blog/changelog/, and https://awesome-copilot.github.com/workflows/.
 3. Select only recent stories that are useful to developers learning GitHub. Verify details against the fetched sources, avoid duplicating existing themes, and keep the page's summaries short and practical.
-4. Update `site/content/github-info.md` in its existing style. Include source links for every change based on the GitHub Blog or Changelog, and preserve useful existing guidance that is still accurate.
+4. Update `site/content/github-info.md` in its existing style. Include source links for every change based on the GitHub Blog, Changelog, or Awesome Copilot workflows, and preserve useful existing guidance that is still accurate.
 5. Review the diff for accuracy, concise wording, and working source links. Do not modify unrelated files.
 6. Open one pull request for Mona to review using the `create-pull-request` safe output. Explain the changes and list the source links in the PR body. Do not write directly to the default branch.
